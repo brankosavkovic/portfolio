@@ -13,7 +13,48 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Portfolio</title>
     <style>
-        
+        .projekti {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .projekti img {
+            width: 100%;
+            border: 3px white solid;
+        }
+
+        .projekti img:hover {
+            opacity: 0.5;
+            border-color: red;
+            transition: all 0.5s ease-out;
+        }
+
+        .btn-light,
+        .btn-dark {
+            display: block;
+            padding: 0.5rem 1rem;
+            margin-bottom: 0.3rem;
+
+        }
+
+        .btn-light:hover,
+        .btn-dark:hover {
+            background-color: red;
+            color: white;
+        }
+        @media screen and (max-width: 768px){
+            .projekti{
+                
+                grid-template-columns: 1fr;
+                margin: 20px;
+            }
+            #div1{
+                align-items: center;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
@@ -44,8 +85,8 @@
 
                 <!-- ovako se dodaje dropdown lista -->
                 <li class="nav-item">
-                        <a class="nav-link" href="projekti.html">Projekti</a>
-                    </li>
+                    <a class="nav-link" href="projekti.html">Projekti</a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="kontakt.html">Kontakt</a>
@@ -59,11 +100,55 @@
         <h1>Moji projekti!</h1>
     </div>
 
+    <div class="projekti">
+        <div class="projekat">
+            <a href="#">
+                <img src="./slike/project1.jpg" alt="">
+                <a class="btn-light" href="#"><i class="fas fa-eye">Projekat 1</i></a>
+                <a class="btn-dark" href="#"><i class="fab fa-github">GitHub</i></a>
+            </a>
+
+        </div>
+        <div class="projekat">
+            <a href="#">
+                <img src="./slike/project2.jpg" alt="">
+                <a class="btn-light" href="#"><i class="fas fa-eye">Projekat 1</i></a>
+                <a class="btn-dark" href="#"><i class="fab fa-github">GitHub</i></a>
+            </a>
+
+        </div>
+        <div class="projekat">
+            <a href="#">
+                <img src="./slike/project3.png" alt="">
+                <a class="btn-light" href="#"><i class="fas fa-eye">Projekat 1</i></a>
+                <a class="btn-dark" href="#"><i class="fab fa-github">GitHub</i></a>
+            </a>
+
+        </div>
+        <div class="projekat">
+            <a href="#">
+                <img src="./slike/project4.jpg" alt="">
+                <a class="btn-light" href="#"><i class="fas fa-eye">Projekat 1</i></a>
+                <a class="btn-dark" href="#"><i class="fab fa-github">GitHub</i></a>
+            </a>
+
+        </div>
+        <div class="projekat">
+            <a href="#">
+                <img src="./slike/project5.jpg" alt="">
+                <a class="btn-light" href="#"><i class="fas fa-eye">Projekat 1</i></a>
+                <a class="btn-dark" href="#"><i class="fab fa-github">GitHub</i></a>
+            </a>
+
+        </div>
+
+    </div>
 
 
 
 
-    
+
+
 
 
 
