@@ -13,10 +13,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <title>Portfolio</title>
     <style>
+        body {
+            background-color: #4EA792;
+        }
+
         .projekti {
             display: grid;
             grid-gap: 20px;
             grid-template-columns: repeat(3, 1fr);
+            margin-left: 20px;
+            margin-right: 20px;
 
         }
 
@@ -44,23 +50,27 @@
             background-color: red;
             color: white;
         }
-        @media screen and (max-width: 768px){
-            .projekti{
-                
+
+        @media screen and (max-width: 768px) {
+            .projekti {
+
                 grid-template-columns: 1fr;
                 margin: 20px;
             }
-            #div1{
-                align-items: center;
-                text-align: center;
-            }
+
+          
+
+        }
+
+        nav {
+            background-color: #328E8C;
         }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar text-uppercase bg-primary navbar-expand-md navbar-dark sticky-top">
+    <nav class="navbar text-uppercase navbar-expand-md navbar-dark sticky-top">
         <!-- logo kompanije cesto stoji na pocetku (ovde cesto stoji i slika umesto teksta) -->
 
 
@@ -85,7 +95,7 @@
 
                 <!-- ovako se dodaje dropdown lista -->
                 <li class="nav-item">
-                    <a class="nav-link" href="projekti.html">Projekti</a>
+                    <a class="nav-link active" href="projekti.html">Projekti</a>
                 </li>
 
                 <li class="nav-item">
@@ -96,8 +106,8 @@
         </div>
     </nav>
 
-    <div id="div1">
-        <h1>Moji projekti!</h1>
+    <div>
+        <h1 style="color:white; margin-left:20px; margin-top:20px; margin-bottom:20px;">Moji projekti!</h1>
     </div>
 
     <div class="projekti">
