@@ -10,14 +10,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
-        /* za slike u okviru carousela je pogodno da budu u potpunosti responsive, zato je pogodno da su im dimenzije 100% sirine i visine */
+        nav{
+            background-color: #328E8C;
+        }
         img {
             width: 100%;
             height: 100%;
         }
 
         #nazad {
-            
+
             text-align: center;
             font-style: italic;
             font-weight: bolder;
@@ -28,27 +30,17 @@
 
 <body>
 
-    <!--
-- na pocetku se dodaje div koji okruzuje carousel sa id="demo" class="carousel slide" data-ride="carousel"
-- id diva mora da odgovara id data-targeta za svaki li element u okviru carousel-indicators i carousel-control
-- carousel se kreira pomocu istoimene klasext
-- klasom slide se dodaje efekat pri tranziciji slike
--->
-<nav class="navbar text-uppercase bg-primary navbar-expand-md navbar-dark fixed-top">
-        <!-- logo kompanije cesto stoji na pocetku (ovde cesto stoji i slika umesto teksta) -->
+    
+    <nav class="navbar text-uppercase navbar-expand-md navbar-dark fixed-top">
 
 
-        <!-- za male ekrane se automatski kreira kolapsirajuci navbar -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseid">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- ovo treba dodati oko navbar-nav dela da bi navbar bio kolapsirajuci. id treba da se poklapa sa id kod data-target -->
         <div class="collapse navbar-collapse" id="collapseid">
 
-            <!-- u sklopu ove liste se dodaju linkovi navbara -->
             <ul class="navbar-nav ">
-                <!-- ovako se dodaje svaki link zasebno (kao clan liste) -->
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Naslovna</a>
                 </li>
@@ -58,8 +50,8 @@
 
 
                 <li class="nav-item">
-                        <a class="nav-link" href="projekti.html">Projekti</a>
-                    </li>
+                    <a class="nav-link" href="projekti.html">Projekti</a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#">Kontakt</a>
@@ -71,20 +63,15 @@
 
     <div id="demo" class="carousel slide" data-ride="carousel">
 
-        <!-- carousel-indicators su indikatori pri dnu slike, koji oznacavaju koliko ima slika i koja je trenutno aktivna -->
         <ul class="carousel-indicators">
-            <!-- active oznacava koja je prvo aktivna -->
             <li data-target="#demo" data-slide-to="0" class="active"></li>
             <li data-target="#demo" data-slide-to="1"></li>
             <li data-target="#demo" data-slide-to="2"></li>
         </ul>
 
-        <!-- carousel-inner dodaje same slajdove -->
         <div class="carousel-inner">
-            <!-- odnosi se na sadrzaj svakog slajda (slika + eventualno neki natpis), active oznacava da je ona na pocetku aktivna -->
             <div class="carousel-item active">
                 <img src="./biciklizam/1.jpg" alt="Slika 1">
-                <!-- natpis koji se dodaje uz sliku -->
                 <div class="carousel-caption">
                     <h1>Kopaonik</h1>
                     <p>Selo Kriva Reka</p>
@@ -94,7 +81,7 @@
                 <img src="./biciklizam/2.jpg" alt="Slika 2">
                 <div class="carousel-caption">
                     <h1>Kopaonik</h1>
-                    
+
                 </div>
             </div>
             <div class="carousel-item">
@@ -104,7 +91,7 @@
                     <p>Pogled na Brzece</p>
                 </div>
             </div>
-           
+
             <div class="carousel-item">
                 <img src="./biciklizam/5.jpg" alt="Slika 3">
                 <div class="carousel-caption">
@@ -162,7 +149,7 @@
                     <h1>Grad Bor</h1>
                 </div>
             </div>
-           
+
             <div class="carousel-item">
                 <img src="./biciklizam/12.jpg" alt="Slika 3">
                 <div class="carousel-caption">
@@ -192,12 +179,10 @@
             </div>
         </div>
 
-        <!-- strelica na levoj strani kojom se prelazi rucno na prethodni slajd -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </a>
 
-        <!-- strelica na desnoj strani kojom se prelazi rucno na naredni slajd -->
         <a class="carousel-control-next" href="#demo" data-slide="next">
             <span class="carousel-control-next-icon"></span>
         </a>
